@@ -2,6 +2,8 @@
 
 A responsive, multi-page travel agency website for trekking and expedition tours in Pakistan, built with **React**, **React Router** and **styled-components**. It covers destinations, a full 19-day K2 Base Camp itinerary, tour packages and an About page.
 
+**Live demo: [travel-tour-guide-website.vercel.app](https://travel-tour-guide-website.vercel.app)**
+
 ![Home page](screenshots/home.jpg)
 
 ## Features
@@ -59,11 +61,16 @@ npm run build     # outputs to dist/
 npm run preview   # serves the production build locally
 ```
 
+## Deployment
+
+The site is deployed on [Vercel](https://vercel.com) (Framework preset: Vite, build command `npm run build`, output directory `dist`). `vercel.json` sends every route to `index.html`, so direct links and page refreshes on pages like `/tour` work with React Router.
+
 ## Project structure
 
 ```
 travel-tour-guide-website/
 ├── index.html
+├── vercel.json                # Route rewrites for client-side routing
 ├── public/
 │   └── favicon.ico
 ├── src/
